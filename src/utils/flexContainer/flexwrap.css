@@ -1,13 +1,16 @@
 .nowrap {
     flex-wrap: nowrap;
+    /* padrão */
 }
 
 .wrap {
     flex-wrap: wrap;
+    /* quebrar */
 }
 
 .wrap-reverse {
     flex-wrap: wrap-reverse;
+    /* quebrar de baixo para cima */
 }
 
 /* Flex Container */
