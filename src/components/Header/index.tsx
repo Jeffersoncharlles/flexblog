@@ -11,27 +11,26 @@ export const Header = () => {
                     <p>Av.145 Useke Road ,Iglecka - IG</p>
                 </div>
             </div>
-            <header className={styles.headerBg}>
-                <div>
+            <header className={styles.headerBG}>
+                <div className={styles.headerContainer}>
                     <a href="/">FlexBlog</a>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#sobre">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#produtos">Produtos</a>
+                            </li>
+                            <li>
+                                <a href="#preco">Preço</a>
+                            </li>
+                            <li>
+                                <a href="#qualidade">Qualidade</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#sobre">Sobre</a>
-                        </li>
-                        <li>
-                            <a href="#produtos">Produtos</a>
-                        </li>
-                        <li>
-                            <a href="#preco">Preço</a>
-                        </li>
-                        <li>
-                            <a href="#qualidade">Qualidade</a>
-                        </li>
-                    </ul>
-                </nav>
-
             </header>
         </>
     );
