@@ -1,0 +1,58 @@
+/* flex container
+.container {
+    /* padrão e block */
+/* item embaixo do outro */
+
+/* com o display flex fia um ao lado do outro */
+/*tamanho do item e do tamanho do conteúdo 
+    display: flex;
+
+    /* ele define se o item vai quebrar ou nao */
+/* quando ele nao caber mais no container ele vai quebrar para caber 
+    flex-wrap: wrap;
+}*/
+/*
+.item {
+    /*no item que tem o flex se eu colocar 1  */
+/* ele vai tentar ocupar total do container 
+    flex: 1;
+} */
+
+/* Flex */
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-item-1 {
+    flex: 1;
+}
+
+/* Flex Item */
+.item {
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+body {
+    font-family: monospace;
+    color: #333;
+}
