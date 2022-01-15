@@ -21,7 +21,8 @@
     --black: #222222;
     --white: #ffff;
 
-    --cyan-500: #61dafb;
+    --cyan-500: #61ddff;
+    --cyan-700: #29a3c8;
     --yellow-500: #eba417;
 
     --magneto-100: #fc5185;
@@ -52,4 +53,5 @@ button {
 
 body {
     background: var(--background);
+    -webkit-font-smoothing: antialiased; //detalhes de font webkit
 }

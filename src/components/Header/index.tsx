@@ -5,7 +5,7 @@ export const Header = () => {
     return (
         <>
             <div className={styles.superInfoBg}>
-                <div className={styles.superInfo}>
+                <div>
                     <p>Seg / Sex - 08:00 às 18:00</p>
                     <a href='tel:+5562999999999'>+55 62 9999-99999</a>
                     <p>Av.145 Useke Road ,Iglecka - IG</p>

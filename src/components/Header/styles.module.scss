@@ -1,0 +1,22 @@
+.superInfoBg {
+    background: var(--cyan-700);
+    color: var(--gray-800);
+
+    div {
+        max-width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between; //alinha cada um na ponta
+        flex-wrap: wrap; //quebrar para proxima quando nao couber
+        padding-top: 10px;
+
+        a {
+            color: var(--gray-800);
+        }
+
+        p,
+        a {
+            margin: 0 10px 10px 10px; //para nao ficar grudado
+        }
+    }
+}
