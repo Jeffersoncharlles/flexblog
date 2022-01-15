@@ -1,4 +1,8 @@
+import { Footer } from '../../components/Footer';
+import { Newsletter } from '../Newsletter';
+import { Price } from '../Price';
 import { Product } from '../Product';
+import { Qualidade } from '../Qualidade';
 import { Sobre } from '../Sobre';
 import styles from './styles.module.scss';
 
@@ -11,6 +15,10 @@ export const Home = () => {
 
             <Sobre />
             <Product />
+            <Price />
+            <Qualidade />
+            <Newsletter />
+            <Footer />
         </>
     );
 }

@@ -1,7 +1,7 @@
 import styles from './styles.module.scss'
 import produto1 from '../../assets/produtos1.jpg';
 import produto2 from '../../assets/produtos2.jpg';
-import produto3 from '../../assets/produtos2.jpg';
+import produto3 from '../../assets/produtos3.jpg';
 
 
 export const Product = () => {
