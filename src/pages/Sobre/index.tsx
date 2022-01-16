@@ -5,7 +5,7 @@ import sobre2 from '../../assets/sobre2.jpg'
 export const Sobre = () => {
 
     return (
-        <section className={styles.aboutContainer} id="sobre">
+        <section className={styles.about} id="sobre">
             <div className={styles.aboutInfo}>
                 <h1>About</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cupiditate temporibus nulla nemo quo, dicta officiis, nihil facilis sit dolorem illum debitis eaque deleniti omnis earum, eveniet distinctio velit asperiores.</p>

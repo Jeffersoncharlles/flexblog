@@ -1,0 +1,35 @@
+.about {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 60px 0; // 60 cima baixo
+    border-top: 2px solid var(--cyan-700);
+    border-bottom: 2px solid var(--cyan-700);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &Info {
+        flex: 2 1 300px; //ocupar 2 vezes mais que as img
+        //mínimo que eu quebrar e 300px
+        margin: 0 10px;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: .5rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+            color: var(--gray-300);
+        }
+    }
+
+    .aboutImg {
+        flex: 1 1 160px; //mínimo que eu quebrar e 160px
+        margin: 0 10px;
+    }
+
+
+}
