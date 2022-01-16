@@ -4,7 +4,7 @@ export const Price = () => {
 
     return (
         <section className={styles.price} id='preco'>
-            <div className="priceItem">
+            <div className={styles.priceItem}>
                 <h2>Cobre</h2>
                 <span><sup>R$</sup>19</span>
                 <ul>
@@ -15,7 +15,7 @@ export const Price = () => {
                 </ul>
                 <button type="submit">Comprar</button>
             </div>
-            <div className="priceItem">
+            <div className={styles.priceItem}>
                 <h2>Prata</h2>
                 <span><sup>R$</sup>39</span>
                 <ul>
@@ -27,7 +27,7 @@ export const Price = () => {
                 </ul>
                 <button type="submit">Comprar</button>
             </div>
-            <div className="priceItem">
+            <div className={styles.priceItem}>
                 <h2>Ouro</h2>
                 <span><sup>R$</sup>79</span>
                 <ul>

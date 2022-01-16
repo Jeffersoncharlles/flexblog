@@ -1,0 +1,102 @@
+.price {
+    // max-width: 1120px;
+    // margin: 0 auto;
+    padding: 60px;
+    background: var(--gray-200);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+@media (max-width:800px) {
+    .price {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.priceItem {
+    flex: 1; //flex 1 vai aumentar de ponta a ponta
+    border: 4px solid var(--white);
+    padding: 20px;
+    margin: 10px;
+    min-width: 260px; //menos que 260 nao colocar nem mais que isso
+
+    h2 {
+        font-size: 3rem;
+        color: var(--gray-300);
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    span {
+        max-width: 300px;
+        margin: 20px auto;
+        display: block; //se nao nem pega margem
+        text-align: center;
+        font-weight: bold;
+        font-size: 3rem;
+        padding: 10px 0 5px 0;
+        border-top: 4px solid var(--white);
+        border-bottom: 4px solid var(--white);
+
+        sup {
+            font-size: 1.5rem;
+        }
+    }
+
+    ul {
+        max-width: 300px;
+        margin: 20px auto;
+        font-size: 1.2rem;
+        font-style: italic;
+
+        li {
+            color: var(--gray-500);
+            display: flex; //alinhar o after pelo flex
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 6px;
+                height: 6px;
+                background: var(--cyan-700);
+                border-radius: 50%;
+            }
+        }
+    }
+
+    button {
+        max-width: 300px;
+        display: block;
+        margin: 20px auto;
+        border: 4px solid;
+        color: var(--black);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2.25rem;
+        padding: 15px 15px;
+        text-align: center;
+        background: transparent;
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--gray-500);
+        }
+    }
+}
+
+@media (max-width:800px) {
+
+    .priceItem:nth-child(3) {
+        order: -2;
+        //falar com o filho mudando ordem
+    }
+
+    .priceItem:nth-child(2) {
+        order: -1;
+    }
+}
