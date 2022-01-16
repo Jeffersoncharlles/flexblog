@@ -1,0 +1,73 @@
+.quality {
+    max-width: 1120px;
+    margin: 60px auto;
+    //overflow: hidden; //sem flex como seria
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.qualidadeItem {
+    // float: left;
+    // width: 33.333%;
+    // height: 200px; //teria que mudar o o tamanho na mao
+    //como seria com float
+
+    flex: 1 1 300px;
+    margin: 20px 10px;
+
+    h2 {
+        font-size: 2.25rem;
+        color: var(--gray-500);
+        margin-bottom: 20px;
+
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    }
+
+
+    //o 3 item da classe atual
+    //quero que o 1 seja selecionado 
+    //e depois o 3 partir do 1
+    &:nth-of-type(3n+1) {
+
+        //quero falar com o h2 com o before
+        h2::before {
+            background: var(--yellow-500);
+        }
+    }
+
+    //o 3 item da classe atual
+    //quero que o 1 seja selecionado 
+    //e depois o 3 partir do 1
+    &:nth-of-type(3n+2) {
+
+        //quero falar com o h2 com o before
+        h2::before {
+            background: var(--magneto-100);
+        }
+    }
+
+    //o 3 item da classe atual
+    //quero que o 1 seja selecionado 
+    //e depois o 3 partir do 1
+    &:nth-of-type(3n+3) {
+
+        //quero falar com o h2 com o before
+        h2::before {
+            background: var(--cyan-700);
+        }
+    }
+
+    p {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+}
