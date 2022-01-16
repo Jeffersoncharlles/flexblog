@@ -1,0 +1,73 @@
+.newsletter {
+    background: var(--gray-100);
+    padding: 60px calc((100% - 1120px)/ 2); //alinhas e pintar tudo
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        flex: 1 1 260px;
+        margin: 0 10px;
+
+        h1 {
+            font-size: 3rem;
+            color: var(--gray-300);
+        }
+
+        p {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--gray-500);
+            max-width: 230px;
+            margin-bottom: 10px;
+        }
+    }
+
+    form {
+        flex: 2 1 260px; //dois to tamanho total
+        margin: 0 10px;
+        align-self: center; //so ele alinhado ao centro
+        display: flex;
+        flex-wrap: wrap;
+
+        input {
+            flex: 3 1 260px;
+            font-size: 1.25rem;
+            color: var(--gray-500);
+            font-style: italic;
+            font-family: 'Nunito', 'Roboto';
+            border: 4px solid var(--cyan-700);
+            padding: 15px 10px;
+            background: transparent;
+            margin: 0px;
+            border-radius: 0px;
+        }
+
+        button {
+            flex: 1 1 260px;
+            font-family: 'Nunito', 'Roboto';
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            background: var(--cyan-700);
+            color: var(--white);
+            transition: filter 0.3s;
+            margin: 0px;
+            border: 0px;
+            padding: 15px 10px;
+
+
+            &:hover {
+                filter: brightness(0.9);
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .newsletter {
+        form {
+            button {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

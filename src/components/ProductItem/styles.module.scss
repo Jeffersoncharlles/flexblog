@@ -1,0 +1,39 @@
+.produtosItem {
+    flex: 1 1 175px; //quando ele passar do base 175px ele quebra
+    margin: 10px;
+
+    h2 {
+        font-size: 3rem;
+        color: var(--gray-300);
+        background: var(--gray-200);
+        padding: 60px 20px;
+    }
+
+    //o 3 item da classe atual
+    //quero que o 1 seja selecionado 
+    //e depois o 3 partir do 1
+    &:nth-of-type(3n+1) {
+
+        //quero falar com o h2 com o before
+        h2 {
+            border-top: 8px solid var(--purple-100);
+        }
+    }
+
+    &:nth-of-type(3n+2) {
+
+        //quero falar com o h2 com o before
+        h2 {
+            border-top: 8px solid var(--pink-100);
+        }
+    }
+
+    &:nth-of-type(3n+3) {
+
+        //quero falar com o h2 com o before
+        h2 {
+            border-top: 8px solid var(--blue-100);
+        }
+    }
+
+}
