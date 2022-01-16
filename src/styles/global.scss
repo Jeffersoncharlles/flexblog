@@ -6,6 +6,22 @@
     color: var(--colorFont);
 }
 
+html {
+
+    //padrao 16px
+    @media (max-width: 1080px) {
+        //16*0.975 = 15px
+        font-size: 93.75%; //15px
+    }
+
+    @media (max-width: 720px) {
+        font-size: 87.5%; //14px
+    }
+
+    //rem = 1 rem = font-size = page
+}
+
+
 :root {
     --gray-25: #F8F8F8;
     --gray-50: #e0e0e0;
