@@ -8,7 +8,7 @@ export const Product = () => {
     return (
         <section className={styles.product} id='produtos'>
             <h1>Produtos</h1>
-            <div className={styles.container}>
+            <div className={styles.product_container}>
                 <div className={styles.produtosItem}>
                     <h2>Purple</h2>
                     <img src={produto1} alt="Produtos 1" />

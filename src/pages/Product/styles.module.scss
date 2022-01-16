@@ -1,0 +1,32 @@
+.product {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 60px 0; // 60 cima baixo
+
+    h1 {
+        font-size: 3rem;
+        margin: 0 10px 60px 10px;
+    }
+
+    &_container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+}
+
+.produtosItem {
+    flex: 1 1 175px; //quando ele passar do base 175px ele quebra
+    margin: 10px;
+
+    h2 {
+        font-size: 3rem;
+        color: var(--gray-300);
+        background: var(--gray-200);
+        padding: 60px 20px;
+    }
+
+    .colors {
+        border-top: 8px solid var(--purple-100);
+    }
+}

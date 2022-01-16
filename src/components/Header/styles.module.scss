@@ -41,6 +41,19 @@
             font-weight: bold;
             color: var(--colorFont);
             margin: 0 10px;
+            position: relative;
+
+            &::after {
+                content: '';
+                height: 3px;
+                border-radius: 3px 3px 0 0;
+                background: var(--yellow-500);
+                width: 50%;
+                position: absolute;
+                bottom: 1.2px;
+                left: 0;
+
+            }
         }
 
         nav {
@@ -52,12 +65,15 @@
                     font-size: 1.125rem;
                     display: block;
                     padding: 10px;
-                    animation: filter 0.3s;
+                    transition: filter 0.3s;
+
 
                     &:hover {
                         filter: brightness(0.2);
                         // border: 1px solid #121212;
                     }
+
+
                 }
             }
         }
